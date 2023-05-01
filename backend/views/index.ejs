@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Details</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th style="border: 2px solid black">Name</th>
+        <th style="border: 2px solid black">Age</th>
+        <th style="border: 2px solid black">Gender</th>
+        <th style="border: 2px solid black">Mobile</th>
+        <th style="border: 2px solid black">Govt Id Type</th>
+        <th style="border: 2px solid black">Govt Id Number</th>
+        <th style="border: 2px solid black">Email</th>
+        <th style="border: 2px solid black">Address</th>
+        <th style="border: 2px solid black">Gaurdian Name</th>
+        <th style="border: 2px solid black">Emergency Contact</th>
+        <th style="border: 2px solid black">Occupation</th>
+        <th style="border: 2px solid black">Religion</th>
+        <th style="border: 2px solid black">Marital Status</th>
+        <th style="border: 2px solid black">Blood Group</th>
+        <th style="border: 2px solid black">Nationality</th>
+      </thead>
+      <tbody>
+        <% result.forEach(element => { %>
+        <td><%= element.name %></td>
+        <td><%= element.age %></td>
+        <td><%= element.sex %></td>
+        <td><%= element.mobile %></td>
+        <td><%= element.govtIdType %></td>
+        <td><%= element.govtIdNumber %></td>
+        <td><%= element.email %></td>
+        <td>
+          <%= element.address %> <%= element.city %> <%= element.state %> <%=
+          element.country %> <%= element.pincode %>
+        </td>
+        <td><%= element.guardianLabel %> <%= element.guardianName %></td>
+        <td><%= element.emergencyContact %></td>
+        <td><%= element.occupation %></td>
+        <td><%= element.religion %></td>
+        <td><%= element.status %></td>
+        <td><%= element.blood %></td>
+        <td><%= element.nationality %></td>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>
