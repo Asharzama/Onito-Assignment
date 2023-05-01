@@ -35,7 +35,7 @@ const ButtonSection = () => {
             });
             setDetailsError(errors);
           });
-    }, 1000);
+    }, 100);
   };
 
   const IdValidity = () => {
